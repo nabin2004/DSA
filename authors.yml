@@ -1,0 +1,28 @@
+version: 1
+project:
+  contributors:
+    - id: nabin
+      name: Nabin Oli
+      email: nabinoli2004@gmail.com
+      github: nabin2004
+      linkedin: https://www.linkedin.com/in/nabinoli
+      orcid: 0009-0007-3770-4668
+      url: https://olinabin.com.np/
+      twitter: nabintwts
+      affiliations:
+        - id: org_a
+        - id: org_b
+    # - id: person_b
+    #   name: First Last
+    #   email: person_b@org_b.com
+    #   orcid: XXXX-XXXX-XXXX-XXXX
+    #   github: person_b
+    #   affiliations:
+    #     - id: org_b
+  affiliations:
+    - id: org_a
+      name: Birmingham City University
+    - id: org_b
+      name: Sunway College Kathmandu
+
+  
