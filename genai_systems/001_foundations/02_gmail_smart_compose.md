@@ -1,9 +1,6 @@
 ---
 id: g002
 title: "Gmail Smart Compose"
-author: "Nabin Oli"
-status: draft
-source: genai_systems/001_foundations/02_gmail_smart_compose.md
 ---
 
 :::{toc}

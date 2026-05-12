@@ -37,10 +37,8 @@ project:
       children:
         - file: genai_systems/index.md
           title: Overview
-        - title: Smart Gmail Compose
-          children:
-            - file: genai_systems/001_foundations/02_gmail_smart_compose.md
-              title: Gmail Smart Compose: Introduction
+        - file: genai_systems/001_foundations/02_gmail_smart_compose.md
+          title: Gmail Smart Compose
         - title: Language & Dialogue Systems
           children:
             - file: genai_systems/002_language_dialogue/index.md
