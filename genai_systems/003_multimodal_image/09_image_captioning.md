@@ -1,3 +1,15 @@
+---
+id: g009
+title: "Image Captioning"
+author: "Nabin Oli"
+status: draft
+source: genai_systems/003_multimodal_image/09_image_captioning.md
+---
+
+:::{toc}
+:context: section
+:::
+
 # 09. Image Captioning
 
 ## Objective
@@ -6,9 +18,18 @@ Generates descriptive text for images by combining vision encoders with language
 
 ## System Architecture
 
-[Mermaid diagram - flowchart showing core components and data flow]
-
-[3-5 sentence description of architecture]
+:::{mermaid}
+flowchart TD
+    subgraph Input
+        A[Image Input] --> B[Vision Encoder]
+    end
+    subgraph Model
+        B --> C[Language Decoder]
+    end
+    subgraph Output
+        C --> D[Caption Generation]
+    end
+:::
 
 ## Technical Approach
 

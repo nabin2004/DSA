@@ -1,3 +1,15 @@
+---
+id: g004
+title: "ChatGPT: Personal Assistant Chatbot"
+author: "Nabin Oli"
+status: draft
+source: genai_systems/002_language_dialogue/04_chatgpt_personal_assistant_chatbot.md
+---
+
+:::{toc}
+:context: section
+:::
+
 # 04. ChatGPT: Personal Assistant Chatbot
 
 ## Objective
@@ -6,9 +18,18 @@ A conversational AI that understands context, maintains multi-turn dialogues, an
 
 ## System Architecture
 
-[Mermaid diagram - flowchart showing core components and data flow]
-
-[3-5 sentence description of architecture]
+:::{mermaid}
+flowchart TD
+    subgraph Input
+        A[User Input] --> B[Preprocessing]
+    end
+    subgraph Model
+        B --> C[Language Model]
+    end
+    subgraph Output
+        C --> D[Response Generation]
+    end
+:::
 
 ## Technical Approach
 

@@ -1,3 +1,15 @@
+---
+id: g016
+title: "Text-to-Video Generation"
+author: "Nabin Oli"
+status: draft
+source: genai_systems/004_multimodal_video_audio/16_text_to_video_generation.md
+---
+
+:::{toc}
+:context: section
+:::
+
 # 16. Text-to-Video Generation
 
 ## Objective
@@ -6,9 +18,18 @@ Generates video sequences from text descriptions using diffusion models or autor
 
 ## System Architecture
 
-[Mermaid diagram - flowchart showing core components and data flow]
-
-[3-5 sentence description of architecture]
+:::{mermaid}
+flowchart TD
+    subgraph Input
+        A[Text Input] --> B[Text Encoder]
+    end
+    subgraph Model
+        B --> C[Video Diffusion Model]
+    end
+    subgraph Output
+        C --> D[Video Generation]
+    end
+:::
 
 ## Technical Approach
 
