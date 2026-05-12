@@ -3,11 +3,7 @@ id: g002
 title: "Gmail Smart Compose"
 ---
 
-:::{toc}
-:context: section
-:::
-
-# 02. Gmail Smart Compose
+# Gmail Smart Compose
 
 ## Objective
 
@@ -52,12 +48,43 @@ High-level: the client triggers prediction (debounced), the edge service enriche
 
 ### Key Components
 
+:::{mermaid}
+graph LR
+    E[Encoder] -->|Context KV| LM[Language Model]
+    LM -->|Raw Candidates| SR[Sampling & Ranking]
+    SR -->|Refined Suggestions| ODI[On-device Engine / Client]
+    
+    style E fill:#f9f,stroke:#333,stroke-width:2px
+    style LM fill:#bbf,stroke:#333,stroke-width:2px
+    style SR fill:#bfb,stroke:#333,stroke-width:2px
+:::
+
 - **Encoder**: encodes fixed context (subject, thread history) into cached key/value representations to avoid repeated work per keystroke.
 - **Language Model**: compact causal Transformer (or distilled decoder) that performs autoregressive next-token scoring; often quantized for latency.
 - **Sampling & Ranking Layer**: beam/greedy decoding with confidence thresholding and lightweight reranking to choose non-intrusive suggestions.
 - **On-device Inference Engine**: tiny local LM or WFA for instant masking of latency, with cloud validation for higher-quality results.
 
 ### Pipeline / Data Flow
+
+:::{mermaid}
+sequenceDiagram
+    participant User
+    participant Client as Client (Web/Mobile)
+    participant Edge as Edge Server
+    participant Inference as Inference Service
+    
+    User->>Client: Types text (prefix)
+    Client->>Client: Debounce / boundary check
+    Client->>Edge: Request prediction (prefix + metadata)
+    Edge->>Edge: Attach cached session context (subject, etc.)
+    Edge->>Inference: Route enriched request
+    Inference->>Inference: Autoregressive decoding (Transformers)
+    Inference->>Inference: Toxicity/PII filtering & personalization
+    Inference-->>Edge: Top candidate sequence
+    Edge-->>Client: Return candidate
+    Client->>User: Render ghost text
+    User->>Client: Accepts (Tab) or ignores
+:::
 
 1. Client triggers after debounce or token boundary and sends `prefix + metadata`.
 2. Edge app server attaches session context (cached encoded subject/thread) and routes to inference.
