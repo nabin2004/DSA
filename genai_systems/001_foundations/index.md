@@ -7,5 +7,5 @@ description: Core GenAI foundations
 
 Core concepts and foundational systems.
 
-- [Gmail Smart Compose](02_gmail_smart_compose.md)
-- [Google Translate](03_google_translate.md)
+- :doc:`02_gmail_smart_compose`
+- :doc:`03_google_translate`
