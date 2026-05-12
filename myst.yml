@@ -37,21 +37,26 @@ project:
       children:
         - file: genai_systems/index.md
           title: Overview
-        - title: Foundations
+        - title: Smart Gmail Compose
           children:
-            - file: genai_systems/001_foundations/index.md
-        - title: Language & Dialogue
+            - file: genai_systems/001_foundations/02_gmail_smart_compose.md
+              title: Gmail Smart Compose: Introduction
+        - title: Language & Dialogue Systems
           children:
             - file: genai_systems/002_language_dialogue/index.md
-        - title: Multimodal Image
+              title: Language & Dialogue Overview
+        - title: Multimodal Image Systems
           children:
             - file: genai_systems/003_multimodal_image/index.md
-        - title: Multimodal Video & Audio
+              title: Multimodal Image Overview
+        - title: Multimodal Video & Audio Systems
           children:
             - file: genai_systems/004_multimodal_video_audio/index.md
-        - title: Infrastructure
+              title: Multimodal Video & Audio Overview
+        - title: GenAI Infrastructure
           children:
             - file: genai_systems/005_infrastructure/index.md
+              title: Infrastructure Overview
     
 site:
   template: book-theme
