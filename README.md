@@ -6,6 +6,12 @@ This book is written for people who want to actually understand data structures 
 
 You are expected to know basic Python syntax. Everything else is built from scratch, step by step, with explanations that connect ideas instead of throwing formulas at you.
 
+## Lesson Order
+
+1. [001_intro/01_intro.md](001_intro/01_intro.md)
+2. [002_arrays/01_arrays.md](002_arrays/01_arrays.md)
+3. [002_arrays/02_arrays.ipynb](002_arrays/02_arrays.ipynb)
+
 <!-- :::{toc}
 :context: project
 :depth: 4
@@ -247,6 +253,46 @@ Practice Problems
 * [ ] Network delay time
 * [ ] Cheapest flights
 * [ ] Rotten oranges
+
+## GenAI System Design Interview
+
+0/22 completed
+
+### Foundations
+
+* [ ] 02 Gmail Smart Compose
+* [ ] 03 Google Translate
+
+### Language and Dialogue
+
+* [ ] 04 ChatGPT: Personal Assistant Chatbot
+* [ ] 05 Retrieval Augmented Generation
+* [ ] 06 Code Generation Assistant
+* [ ] 07 Document Q&A over PDF/Enterprise Corpus
+* [ ] 08 Real-Time Meeting Summariser
+
+### Multimodal Image
+
+* [ ] 09 Image Captioning
+* [ ] 10 Realistic Face Generation (GAN)
+* [ ] 11 High-Resolution Image Synthesis
+* [ ] 12 Text-to-Image Generation
+* [ ] 13 Personalized Headshot Generation
+* [ ] 14 Visual Question Answering
+* [ ] 15 Product Photo Background Removal and Staging
+
+### Multimodal Video and Audio
+
+* [ ] 16 Text-to-Video Generation
+* [ ] 17 AI Video Subtitle and Dubbing System
+* [ ] 18 Music Generation from Text Prompt
+
+### Infrastructure and ML Systems
+
+* [ ] 19 LLM Serving Infrastructure
+* [ ] 20 Online Fine-Tuning and RLHF Pipeline
+* [ ] 21 ML Feature Store for GenAI
+* [ ] 22 Evaluation and Red-Teaming Platform
 
 ## How to Use This Book
 
