@@ -8,9 +8,9 @@ project:
     - " "
 
   id: 4e8465aa-6765-4493-9555-d409fbeab635
-  title: DSA with Python
-  description: Data Structure and Algorithm with Python
-  keywords: ["DSA", "Python","Leetcode"]
+  title: Nabin's Notebooks
+  description: A collection of notebooks covering various topics in Data Structures and Algorithms (DSA) and GenAI Systems Design. This repository serves as a comprehensive resource for students and practitioners looking to deepen their understanding of these subjects through practical implementations and theoretical insights.
+  keywords: ["DSA", "Data Structures", "Algorithms", "GenAI Systems Design", "Notebooks", "Educational Resource"]
   # authors: ["Nabin Oli"]
   github: nabin2004/dsa
   # To autogenerate a Table of Contents, run "jupyter book init --write-toc"
@@ -37,25 +37,69 @@ project:
       children:
         - file: genai_systems/index.md
           title: Overview
-        - file: genai_systems/001_foundations/02_gmail_smart_compose.md
-          title: Gmail Smart Compose
-        - title: Language & Dialogue Systems
+        - title: Foundations
+          children:
+            - file: genai_systems/001_foundations/index.md
+              title: Overview
+            - file: genai_systems/001_foundations/02_gmail_smart_compose.md
+              title: Gmail Smart Compose
+            - file: genai_systems/001_foundations/03_google_translate.md
+              title: Google Translate
+        - title: Language and Dialogue
           children:
             - file: genai_systems/002_language_dialogue/index.md
-              title: Language & Dialogue Overview
-        - title: Multimodal Image Systems
+              title: Overview
+            - file: genai_systems/002_language_dialogue/04_chatgpt_personal_assistant_chatbot.md
+              title: ChatGPT; Personal Assistant Chatbot
+            - file: genai_systems/002_language_dialogue/05_retrieval_augmented_generation.md
+              title: Retrieval Augmented Generation
+            - file: genai_systems/002_language_dialogue/06_code_generation_assistant.md
+              title: Code Generation Assistant
+            - file: genai_systems/002_language_dialogue/07_document_qa_over_pdfenterprise_corpus.md
+              title: Document QA Over PDF Enterprise Corpus
+            - file: genai_systems/002_language_dialogue/08_real_time_meeting_summariser.md
+              title: Real Time Meeting Summariser
+        - title: Multimodal Image
           children:
             - file: genai_systems/003_multimodal_image/index.md
-              title: Multimodal Image Overview
-        - title: Multimodal Video & Audio Systems
+              title: Overview
+            - file: genai_systems/003_multimodal_image/09_image_captioning.md
+              title: Image Captioning
+            - file: genai_systems/003_multimodal_image/10_realistic_face_generation_gan.md
+              title: Realistic Face Generation (GAN)
+            - file: genai_systems/003_multimodal_image/11_high_resolution_image_synthesis.md
+              title: High Resolution Image Synthesis
+            - file: genai_systems/003_multimodal_image/12_text_to_image_generation.md
+              title: Text to Image Generation
+            - file: genai_systems/003_multimodal_image/13_personalized_headshot_generation.md
+              title: Personalized Headshot Generation
+            - file: genai_systems/003_multimodal_image/14_visual_question_answering.md
+              title: Visual Question Answering
+            - file: genai_systems/003_multimodal_image/15_product_photo_background_removal_and_staging.md
+              title: Product Photo Background Removal and Staging
+        - title: Multimodal Video and Audio
           children:
             - file: genai_systems/004_multimodal_video_audio/index.md
-              title: Multimodal Video & Audio Overview
-        - title: GenAI Infrastructure
+              title: Overview
+            - file: genai_systems/004_multimodal_video_audio/16_text_to_video_generation.md
+              title: Text to Video Generation
+            - file: genai_systems/004_multimodal_video_audio/17_ai_video_subtitle_and_dubbing_system.md
+              title: AI Video Subtitle and Dubbing System
+            - file: genai_systems/004_multimodal_video_audio/18_music_generation_from_text_prompt.md
+              title: Music Generation from Text Prompt
+        - title: Infrastructure
           children:
             - file: genai_systems/005_infrastructure/index.md
-              title: Infrastructure Overview
-    
+              title: Overview
+            - file: genai_systems/005_infrastructure/19_llm_serving_infrastructure.md
+              title: LLM Serving Infrastructure
+            - file: genai_systems/005_infrastructure/20_online_fine_tuning_and_rlhf_pipeline.md
+              title: Online Fine Tuning and RLHF Pipeline
+            - file: genai_systems/005_infrastructure/21_ml_feature_store_for_genai.md
+              title: ML Feature Store for GenAI
+            - file: genai_systems/005_infrastructure/22_evaluation_and_red_teaming_platform.md
+              title: Evaluation and Red Teaming Platform
+
 site:
   template: book-theme
   options:
