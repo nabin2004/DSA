@@ -8,9 +8,9 @@ You are expected to know basic Python syntax. Everything else is built from scra
 
 ## Lesson Order
 
-1. [001_intro/01_intro.md](001_intro/01_intro.md)
-2. [002_arrays/01_arrays.md](002_arrays/01_arrays.md)
-3. [002_arrays/02_arrays.ipynb](002_arrays/02_arrays.ipynb)
+1. [dsa/001_intro/01_intro.md](dsa/001_intro/01_intro.md)
+2. [dsa/002_arrays/01_arrays.md](dsa/002_arrays/01_arrays.md)
+3. [dsa/002_arrays/02_arrays.ipynb](dsa/002_arrays/02_arrays.ipynb)
 
 <!-- :::{toc}
 :context: project

@@ -4,8 +4,8 @@ import pytest
 import tempfile
 from pathlib import Path
 
-from src.template_generator import GenAISystem, ComplexityMetrics, TemplateGenerator
-from src.systems_data import get_all_systems, validate_systems_data
+from dsapython.template_generator import GenAISystem, ComplexityMetrics, TemplateGenerator
+from dsapython.systems_data import get_all_systems, validate_systems_data
 
 
 class TestComplexityMetrics:
@@ -150,7 +150,7 @@ class TestSkeletonPageValidator:
     
     def test_validate_valid_page(self):
         """Test validating a valid skeleton page."""
-        from src.template_generator import SkeletonPageValidator
+        from dsapython.template_generator import SkeletonPageValidator
         
         valid_page = """# System Title
 

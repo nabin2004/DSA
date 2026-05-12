@@ -1,7 +1,7 @@
 """Test for systems data integrity."""
 
 import pytest
-from src.systems_data import (
+from dsapython.systems_data import (
     ALL_SYSTEMS,
     get_all_systems,
     get_systems_by_category,
